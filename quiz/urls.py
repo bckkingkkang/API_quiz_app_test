@@ -3,5 +3,5 @@ from .views import helloAPI, randomQuiz
 
 urlpatterns = [
     path('hello/', helloAPI),
-    path('random/<int:id>/', randomQuiz),
+    path('<int:id>/', randomQuiz),
 ]
