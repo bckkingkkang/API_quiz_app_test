@@ -20,3 +20,12 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# 주요 명령어
+# startapp : 앱 생성
+# runserver : 서버 실행
+# createsuperuser : 관리자 생성
+# makemigrations app : app의 모델 변경 사항 체크
+# migrate : 변경 사항을 DB에 반영
+# shell : 쉘을 통해 데이터를 확인
+# collectstatic : 정적 파일을 한 곳에 모음
