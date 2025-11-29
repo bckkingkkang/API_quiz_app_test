@@ -1,3 +1,4 @@
+# 전체 프로젝트를 관리하는 설정 파일
 """
 Django settings for myapi project.
 
@@ -24,6 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-*rh75qzb^bcmwj2%sae7sf4&sb0ehc!k)kfyje&(qbr!m^-f)s')
 
+# DEBUG : 디버그 모드 설정
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
@@ -32,6 +34,7 @@ ALLOWED_HOSTS = ['*']
 
 # Application definition
 
+# INSTALLED_APPS : pip로 설치한 앱 또는 본인이 만든 app을 추가
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -43,6 +46,7 @@ INSTALLED_APPS = [
     'rest_framework',
 ]
 
+# MIDDLEWARE_CLASSES : request와 response 사이의 주요 기능 레이어
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -56,6 +60,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'myapi.urls'
 
+# TEMPLATES : django template 관련 설정, 실제 뷰(html, 변수)
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -121,6 +126,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
+# STATCIC_URL : 정적 파일의 URL(css, javascript, image, etc.)
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 

@@ -1,3 +1,4 @@
+# 데이터베이스로부터 가지고 온 데이터를 가공하여 API 형태로 제공하는 역할
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from .models import Quiz

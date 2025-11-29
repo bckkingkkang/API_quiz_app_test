@@ -1,3 +1,4 @@
+# 프로젝트의 URL 설정 파일
 """
 URL configuration for myapi project.
 
